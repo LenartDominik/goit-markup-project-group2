@@ -2,20 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+    <link href="css/modern-normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Ice Cream</title>
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html"></include>
-
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js"></script>
+    <header class="header hero-leader"></header>
+    <main class="main">
+      <section class="section products"></section>
+      <section class="section about"></section>
+      <section class="advantages"></section>
+      <section class="section gallery"></section>
+      <section class="section customer-reviews">
+        <div class="customer-reviews__img-container">
+          <img
+            class="customer-reviews__img customer-reviews__img--one"
+            srcset="
+              ./images/customer-1@2x.jpg  480w,
+              ./images/customer-1@2x.jpg  768w,
+              ./images/customer-1.jpg    1280w
+            "
+            alt="Emily, Los Angeles"
+          />
+          <img
+            class="customer-reviews__img customer-reviews__img--two"
+            srcset="
+              ./images/customer-2@2x.jpg  480w,
+              ./images/customer-2@2x.jpg  768w,
+              ./images/customer-2.jpg    1280w
+            "
+            alt=">Sarah, Las Vegas"
+          />
+          <img
+            class="customer-reviews__img customer-reviews__img--three"
+            srcset="
+              ./images/customer-3@2x.jpg  480w,
+              ./images/customer-3@2x.jpg  768w,
+              ./images/customer-3.jpg    1280w
+            "
+            alt="Elizabeth, London"
+          />
+        </div>
+        <div class="customer-reviews__text-background">
+          <div class="customer-reviews__paper">
+            <p class="customer-reviews__text customer-reviews__text--one">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <p class="customer-reviews__text customer-reviews__text--two">
+              Vestibulum blandit congue lectus vitae consequat. Nam eu nibh sed turpis mollis
+              euismod. Phasellus posuere ante lobortis, iaculis tortor id, viverra massa.
+            </p>
+            <p class="customer-reviews__text customer-reviews__text--three">
+              Praesent pellentesque lectus id dictum mattis. Ut vestibulum odio leo, eget molestie
+              lorem viverra mollis. Nunc sed ultrices magna. Curabitur aliquam in odio sed faucibus.
+            </p>
+          </div>
+        </div>
+        <div class="customer-reviews__titles"></div>
+          <h3 class="customer-reviews__title customer-reviews__title--one">Emily, Los Angeles</h3>
+          <h3 class="customer-reviews__title customer-reviews__title--two">Sarah, Las Vegas</h3>
+          <h3 class="customer-reviews__title customer-reviews__title--three">Elizabeth, London</h3>
+        </div>
+        <div class="customer-reviews__dots-menu">
+          <div class="customer-reviews__dot customer-reviews__dot--one"></div>
+          <div class="customer-reviews__dot customer-reviews__dot--two"></div>
+          <div class="customer-reviews__dot customer-reviews__dot--three"></div>
+        </div>
+      </section>
+      <section class="section locations"></section>
+      <section class="section contacts"></section>
+    </main>
+    <footer class="footer"></footer>
+    <section class="modal-buy-now"></section>
+    <!--JS-->
   </body>
 </html>

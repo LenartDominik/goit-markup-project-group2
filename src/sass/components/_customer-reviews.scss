@@ -1,0 +1,347 @@
+.customer-reviews {
+    font-family: $dm-sans;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    &__img-container {
+        margin: 0 auto 29px;
+        height: 85px;
+    }
+    &__img {
+        left: 0;
+        width: 0;
+        height: 85px;
+        animation: opacityImg 15s ease-in-out infinite;
+        &--two{
+            animation-delay: 5s;
+        }
+        &--three {
+            animation-delay: 10s;
+        }
+    }
+    &__text-background {
+        position: relative;
+        background-color: $lighter-gray;
+        min-width: 280px;
+        max-width: calc(480px - 20px - 20px);
+        max-height: 308px;
+        margin: 0 20px;
+        padding-top: 43px;
+        padding-bottom: 20px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(.././images/quote.png);
+            background-repeat: no-repeat;
+            top: 25px;
+            left: 55px;
+            height: 100px;
+            width: 100px;
+        }
+        &::after {
+            content: "";
+            background-image: url(.././images/dots.png);
+            position: absolute;
+            bottom: -33px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 7px;
+            background-size: 25px;
+        }
+    }
+    &__paper {
+        margin: auto;
+        padding-left: 7px;
+        padding-right: 16px;
+        width: 62%;
+        background-image: linear-gradient($light-gray 1px, transparent 0px);
+        background-size: 50% 1.95em;
+        background-position-y: 1.5rem;
+        overflow: hidden;
+    }
+    &__text {
+        position: relative;
+        font-weight: 500;
+        color: $main-black;
+        text-align: center;
+        font-size: 12px;
+        line-height: 255%;
+        margin: auto 0;
+        height: 0;
+        left: -150%;
+        animation: scrollText 15s ease infinite;
+        &--two {
+            animation-delay: 5s;
+        }
+        &--three {
+            animation-delay: 10s; 
+        }
+    }
+    &__titles {
+        margin-top: 52px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 14px;
+        line-height: 186%;
+        color: $main-black;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        bottom: 20px;
+        height: 0;
+        opacity: 0;
+        animation: opacityTitle 15s ease infinite;
+        &--two{
+            animation-delay: 5s;
+        }
+        &--three {
+            animation-delay: 10s;
+        }
+    }
+    &__dots-menu {
+        display: flex;
+        margin: 0 auto;
+    }
+    &__dot {
+        background-color: $main-gray;
+        width: 12px;
+        height: 12px;
+        margin: 0 9px;
+        border-radius: 50%;
+        animation: homeToDot 15s ease infinite;
+        &--two {
+            animation-delay: 5s;
+        }
+        &--three {
+            animation-delay: 10s;
+        }
+    }
+}
+
+@keyframes homeToDot {
+    0% {
+        position: relative;
+        bottom: 0;
+        background-color: transparent;
+        background-image: none;
+        width: 12px;
+        height: 12px;
+        background-color: $main-gray;
+    }
+
+    1% {
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8449 5.85484C13.0696 5.60772 13.0479 5.22897 12.7964 5.00908L7.25687 0.161935C7.00543 -0.0579491 6.60231 -0.0533429 6.35616 0.172319L0.797761 5.26751C0.551613 5.49318 0.539532 5.87145 0.771013 6.11206L0.91037 6.25719C1.14157 6.49781 1.51527 6.52649 1.74453 6.32107L2.15994 5.94907V11.3953C2.15994 11.7295 2.43069 12 2.7646 12H4.93127C5.26518 12 5.53594 11.7295 5.53594 11.3953V7.58515H8.29956V11.3953C8.29475 11.7292 8.53367 11.9998 8.86757 11.9998H11.1637C11.4976 11.9998 11.7684 11.7292 11.7684 11.3951V6.02575C11.7684 6.02575 11.8831 6.12628 12.0247 6.25069C12.166 6.37485 12.4627 6.2753 12.6874 6.02794L12.8449 5.85484Z' fill='%23D31342'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        bottom: 4.5px;
+        background-size: 13px;
+        width: 20px;
+        height: 20px;
+
+    }
+    33% {
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8449 5.85484C13.0696 5.60772 13.0479 5.22897 12.7964 5.00908L7.25687 0.161935C7.00543 -0.0579491 6.60231 -0.0533429 6.35616 0.172319L0.797761 5.26751C0.551613 5.49318 0.539532 5.87145 0.771013 6.11206L0.91037 6.25719C1.14157 6.49781 1.51527 6.52649 1.74453 6.32107L2.15994 5.94907V11.3953C2.15994 11.7295 2.43069 12 2.7646 12H4.93127C5.26518 12 5.53594 11.7295 5.53594 11.3953V7.58515H8.29956V11.3953C8.29475 11.7292 8.53367 11.9998 8.86757 11.9998H11.1637C11.4976 11.9998 11.7684 11.7292 11.7684 11.3951V6.02575C11.7684 6.02575 11.8831 6.12628 12.0247 6.25069C12.166 6.37485 12.4627 6.2753 12.6874 6.02794L12.8449 5.85484Z' fill='%23D31342'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        bottom: 4.5px;
+        background-size: 13px;
+        width: 20px;
+        height: 20px;
+    }
+
+    34% {
+        position: relative;
+        bottom: 0;
+        background-color: $main-gray;
+        background-image: none;
+        width: 12px;
+        height: 12px;
+    }
+    66.666% {
+        background-color: $main-gray;
+        background-image: none;
+        width: 12px;
+        height: 12px;
+    }
+
+    100% {
+        background-color: $main-gray;
+    }
+}
+
+@keyframes opacityImg {
+    0% {
+        width: 0;
+    }
+
+    9% {
+        width: 85px;
+    }
+
+    10% {
+        transform: rotateY(0);
+        width: 85px;
+    }
+
+    25% {
+        transform: rotateY(0);
+        width: 85px;
+    }
+
+    33% {
+        transform: rotateY(90deg);
+        width: 85px;
+    }
+
+    33.333% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes opacityTitle {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    9% {
+        height: 100%;
+        opacity: 1;
+    }
+    10% {
+        height: 100%;
+        opacity: 1;
+        color: $main-black;
+        left: 0;
+    }
+    25% {
+        color: $main-black;
+        left: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    33.333% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        height: 0;
+        color: transparent;
+        left: -150%;
+    }
+    3% {
+        height: 100%;
+    }
+    4% {
+        height: 100%;
+        color: $main-black;
+        left: 0;
+    }
+    25% {
+        color: $main-black;
+        left: 0;
+    }
+    30% {
+        color: transparent;
+        left: 150%;
+    }
+    33.333% {
+        height: 0;
+    }
+    100% {
+        height: 0;
+        color: transparent;
+    }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .customer-reviews {
+        &__img-container {
+            margin-bottom: 19px;
+        }
+        &__text-background {
+            max-width: calc(1000px - 74px - 74px);
+            margin: 0 74px;
+            &::before {
+                left: 80px;
+            }
+            &::after {
+                bottom: -27px;
+            }
+        }
+        &__paper {
+            padding-left: 20px;
+            padding-right: 44px;
+            width: 80%;
+            background-size: 50% 2.05em;
+            background-position-y: 1.52rem;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 216%;
+        }
+        &__titles {
+            margin-top: 42px;
+            margin-bottom: 35px;
+        }
+        &__title {
+            font-size: 16px;
+        }
+    }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1280px) {
+    .customer-reviews {
+        &__img-container {
+            margin-bottom: 15px;
+        }
+        &__text-background {
+            margin: 0 176px 0 178px;
+            max-width: calc(1280px - 178px - 176px);
+            &::after {
+                bottom: -18px;
+            }
+        }
+        &__paper {
+            padding-left: 28px;
+            padding-right: 35px;
+            background-position-y: 1.59rem;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 186%;
+        }
+        &__titles {
+            margin-top: 34px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+    }
+}
