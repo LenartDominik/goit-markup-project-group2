@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Adamskoczen/Project-1-IceCream"
+    "url": "git+https://github.com/Adamskoczen/Project-1-IceCream/tree/main/src"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Adamskoczen/Project-1-IceCream"
+    "url": "https://github.com/Adamskoczen/Project-1-IceCream/tree/main/src"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
