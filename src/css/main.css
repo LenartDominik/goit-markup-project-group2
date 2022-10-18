@@ -1517,6 +1517,31 @@ picture img#pic4 {
     padding-top: 15px;
   }
 }
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  padding: 97px 0px 80px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgb(255, 245, 246)), color-stop(2%, rgb(255, 255, 255)));
+  background: linear-gradient(180deg, rgb(255, 245, 246) 45%, rgb(255, 255, 255) 2%);
+}
+.gallery__section {
+  max-width: 1280px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 140px 0px 120px 0px;
+  }
+}
 .customer-reviews {
   font-family: DM Sans;
   max-width: 1280px;
