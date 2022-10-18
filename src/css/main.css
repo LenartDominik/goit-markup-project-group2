@@ -883,7 +883,7 @@ picture img#pic4 {
   position: relative;
   padding-bottom: 30px;
   line-height: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .products .product__name::after {
   content: "...";
