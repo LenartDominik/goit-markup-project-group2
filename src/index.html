@@ -236,7 +236,78 @@
       </section>
     </main>
     <footer class="footer"></footer>
-    <section class="modal-buy-now"></section>
+    <section class="modal-buy-now">
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__close-btn" data-modal-close>
+        <svg width="30" height="30">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal__flexbox">
+        <legend class="modal__title">Select your product</legend>
+        <div class="modal__product-container">
+          <label class="modal__item">
+            <input type="checkbox" class="modal__item-checkbox" />
+            <span class="modal__option-inner">
+              <img class="modal__image" src="./images/pc-product1.png" />
+              <span class="modal__name">icecream</span>
+            </span>
+          </label>
+          <label class="modal__item">
+            <input type="checkbox" class="modal__item-checkbox" />
+            <span class="modal__option-inner">
+              <img class="modal__image" src="./images/pc-product2.png" />
+              <span class="modal__name">ice coffee</span>
+            </span>
+          </label>
+          <label class="modal__item">
+            <input type="checkbox" class="modal__item-checkbox" />
+            <span class="modal__option-inner">
+              <img class="modal__image" src="./images/pc-product3.png" />
+              <span class="modal__name">milkshakes</span>
+            </span>
+          </label>
+        </div>
+
+        <!-- done - bez buttona -->
+
+        <form class="modal__form">
+          <label class="modal__label">
+            <input type="text" name="name" class="modal__input" required />
+
+            <span class="modal__tag">Name</span>
+            <i class="modal__tag-decoration"></i>
+          </label>
+
+          <label class="modal__label">
+            <input type="text" class="modal__input" required />
+            <span class="modal__tag">Address</span>
+            <i class="modal__tag-decoration"></i>
+          </label>
+
+          <label class="modal__label">
+            <input type="tel" name="phone" class="modal__input" required />
+            <span class="modal__tag">Phone</span>
+            <i class="modal__tag-decoration"></i>
+          </label>
+          <label class="modal__label">
+            <input type="email" name="email" class="modal__input" required />
+            <span class="modal__tag">e-mail</span>
+            <i class="modal__tag-decoration"></i>
+          </label>
+          <button type="submit" value="data" class="btn">Proceed to checkout</button>
+        </form>
+
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
+
+
+      
+    </section>
     <!--JS-->
   </body>
 </html>
