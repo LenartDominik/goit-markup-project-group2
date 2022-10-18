@@ -56,25 +56,6 @@ a {
   max-width: 1280px;
 }
 
-.customer-reviews {
-  font-family: DM Sans;
-  max-width: 1280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-}
 .customer-reviews__img-container {
   margin: 0 auto 29px;
   height: 85px;
