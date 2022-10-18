@@ -1977,6 +1977,7 @@ picture img#pic4 {
   overflow: auto;
   max-width: 1000px;
   padding: 40px;
+  z-index: 666;
 }
 .modal__close-btn {
   width: 0;
