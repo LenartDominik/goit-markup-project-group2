@@ -1,0 +1,218 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $dm-sans;
+  background-color: $bg-pink;
+  margin: 0 auto;
+  padding-top: 113px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+  }
+
+  &__text-upercasse {
+    margin-left: 22px;
+    margin-right: 66px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__text-one {
+    font-family: $titan-one;
+    color: $main-pink;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 4%;
+    margin-top: 165px;
+  }
+  &__text-two {
+    font-family: $titan-one;
+    color: $main-red;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 4%;
+  }
+
+  &__icons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 43px;
+    gap: 30px;
+    list-style-type: none;
+  }
+
+  &__icon {
+    fill: $main-white;
+    position: relative;
+    height: 25px;
+    top: 8px;
+    &--padding {
+      left: -2px;
+    }
+  }
+
+  &__list {
+    background-color: $main-pink;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__contact {
+    position: relative;
+    text-align: right;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 46px;
+    margin-bottom: 43px;
+    padding-right: 20px;
+    &--phone {
+      color: $main-red;
+      text-decoration: none;
+    }
+    & p {
+      position: relative;
+      left: 47px;
+    }
+  }
+
+  &__signature {
+    text-align: center;
+
+    & p {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 26px;
+      border-top: solid 1px $light-gray;
+      color: $dark-gray;
+      padding: 25px 91px 25px 82px;
+    }
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 165px;
+    &__text-upercasse {
+      margin-left: 22px;
+      margin-right: 66px;
+      text-transform: uppercase;
+      width: 350px;
+    }
+
+    &__text-one {
+      font-family: $titan-one;
+      color: $main-pink;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 4%;
+      margin-top: 165px;
+    }
+    &__text-two {
+      font-family: $titan-one;
+      color: $main-red;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 55px;
+    }
+
+    &__icons {
+      right: 36px;
+
+      margin-top: -252px;
+      gap: 30px;
+    }
+
+    &__contact {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 26.04px;
+      text-align: right;
+      margin-right: 39px;
+
+      margin-top: 65px;
+      padding-bottom: 120px;
+      &--phone {
+        color: $main-red;
+      }
+      & p {
+        position: relative;
+        left: 47px;
+      }
+    }
+    &__signature {
+      margin-top: 63px;
+
+      & p {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        border-top: solid 1px $light-gray;
+        color: $dark-gray;
+        padding: 9px 91px 9px 82px;
+      }
+    }
+  }
+}
+
+// Deskop
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    &__text-upercasse {
+      margin-left: 114px;
+      width: 450px;
+    }
+
+    &__text-one {
+      font-family: $titan-one;
+      color: $main-pink;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 35px;
+    }
+
+    &__text-two {
+      font-family: $titan-one;
+      color: $main-red;
+      font-size: 58px;
+      line-height: 55px;
+      margin-top: 15px;
+    }
+    &__icons {
+      right: 36px;
+      margin-right: 85px;
+      margin-top: -152px;
+      gap: 30px;
+    }
+
+    &__contact {
+      font-size: 16px;
+      line-height: 29.76px;
+      margin-right: 85px;
+
+      margin-top: 37px;
+      padding-bottom: 12px;
+      &--phone {
+        color: $main-red;
+      }
+      & p {
+        position: relative;
+        left: 47px;
+      }
+    }
+  }
+}
