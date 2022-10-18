@@ -14,7 +14,36 @@
   max-width: 1000px;
   padding: 40px;
   z-index: 666;
+  .btn {
+    cursor: pointer;
+    @include font($fw: 700, $ff: $dm-sans, $fs: 16px, $lh: 21px);
+    align-self: center;
+    color: $main-white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    max-width: 240px;
+    margin-bottom: 20px;
+    background: $main-red;
+    background-image: linear-gradient(
+      -60deg,
+      transparent,
+      transparent 40%,
+      #ffffff44 40%,
+      #ffffff44 60%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
 
+    &:hover,
+    &:focus {
+      background-position-x: -150%;
+      transition: background-position-x 1500ms;
+    }
+  }
   &__close-btn {
     width: 0;
     height: 0;
