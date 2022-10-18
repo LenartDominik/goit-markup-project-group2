@@ -1,3 +1,33 @@
+.btn {
+  cursor: pointer;
+  @include font($fw: 700, $ff: $dm-sans, $fs: 16px, $lh: 21px);
+  align-self: center;
+  color: $main-white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  max-width: 240px;
+  margin-bottom: 20px;
+  background: $main-red;
+  background-image: linear-gradient(
+    -60deg,
+    transparent,
+    transparent 40%,
+    #ffffff44 40%,
+    #ffffff44 60%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+
+  &:hover,
+  &:focus {
+    background-position-x: -150%;
+    transition: background-position-x 1500ms;
+  }
+}
 .modal {
   position: fixed;
   top: 50%;
@@ -7,44 +37,15 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   width: 80vw;
   height: 90vh;
   overflow: auto;
   max-width: 1000px;
   padding: 40px;
-  z-index: 666;
-  .btn {
-    cursor: pointer;
-    @include font($fw: 700, $ff: $dm-sans, $fs: 16px, $lh: 21px);
-    align-self: center;
-    color: $main-white;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 15px;
-    max-width: 240px;
-    margin-bottom: 20px;
-    background: $main-red;
-    background-image: linear-gradient(
-      -60deg,
-      transparent,
-      transparent 40%,
-      #ffffff44 40%,
-      #ffffff44 60%,
-      transparent 60%,
-      transparent 100%
-    );
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-    background-position-x: 150%;
 
-    &:hover,
-    &:focus {
-      background-position-x: -150%;
-      transition: background-position-x 1500ms;
-    }
-  }
   &__close-btn {
+    z-index: 25;
     width: 0;
     height: 0;
     position: absolute;
@@ -58,6 +59,7 @@
 
     &:hover,
     &:focus {
+      transition: 300ms ease-in-out;
       fill: $alt-red;
     }
   }
@@ -86,21 +88,21 @@
   }
 
   &__tag {
-    color: rgba(255, 255, 255, 0.9);
+    color: $lighter-gray;
     position: absolute;
     top: 0;
-    text-transform: uppercase;
-    font-size: 1em;
+    @include font($fw: 400, $ff: $dm-sans, $fs: 15px, $lh: 16px, $tt: uppercase);
     white-space: nowrap;
-    transition-property: color, transform, font-size;
+    transition-property: color, transform, font-size font-weight;
     transition-duration: 0.5s;
 
     .modal__input:valid ~ &,
     .modal__input:focus ~ &,
     .modal__input:hover ~ & {
-      color: rgba(255, 255, 255, 0.8);
-      transform: translateY(-16px);
-      font-size: 0.7em;
+      color: $main-red;
+      transform: translateY(-1.5em);
+      font-size: 0.8em;
+      font-weight: 700;
     }
   }
 
@@ -111,6 +113,13 @@
 
   &__item-checkbox {
     display: none;
+  }
+  &__name {
+    display: block;
+    color: $main-white;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 
   &__option-inner {
@@ -130,26 +139,23 @@
       /* border-color: rgba(211, 19, 66, 1); */
       border-image-source: linear-gradient(to left, $light-pink, $dark-pink, $light-pink);
       transform: scale(90%);
+      .modal__name {
+        color: $main-green;
+      }
     }
   }
 
   &__name {
     display: block;
-    color: rgba(255, 255, 255, 0.9);
+    color: $main-white;
     font-weight: 400;
     text-transform: uppercase;
     white-space: nowrap;
   }
 
   &__title {
+    @include font($fw: 500, $ff: $titan-one, $fs: 24px, $lh: 18px, $tt: uppercase);
     color: $main-white;
-    font-family: $titan-one, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
 
   &__flexbox {
@@ -201,11 +207,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .modal__image {
   width: 40%;
+  display: inline-block;
 }
 
 @media screen and (min-width: 480px) {
@@ -213,5 +220,40 @@
     &__image {
       width: 50%;
     }
+  }
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: $light-pink;
+  border-radius: 0.5em;
+  margin-block: 0.3em;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: $light-pink;
+  //   border-radius: 0.5em;
+  margin-block: 1em;
+  width: 0.1em;
+  height: 0.1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark-pink;
+  border: 0.2em solid rgba(255, 121, 146, 50%);
+  border-radius: 0.5em;
+
+  &:hover {
+    background: $light-red;
+  }
+}
+
+@supports (scrollbar-color: $dark-pink $light-pink) {
+  * {
+    scrollbar-color: $dark-pink $light-pink;
+    scrollbar-width: thin;
   }
 }
