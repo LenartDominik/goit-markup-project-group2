@@ -1,0 +1,89 @@
+.advantages {
+  padding: 39px 0px 0px 20px;
+  &__img {
+    width: 33px;
+    height: 50px;
+    &#adv2 {
+      width: 50px;
+    }
+    &#adv3 {
+      width: 44px;
+    }
+  }
+  &__title {
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+  &__item {
+    width: 230px;
+    &--padding {
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+  }
+  &__desc {
+    padding-top: 16px;
+  }
+  &__img-title {
+    width: 98px;
+    height: 56px;
+    @include font($fs: 36px, $lh: 41px, $ff: $titan-one, $fw: 400, $tal: left);
+    color: $main-red;
+  }
+  &__img-text {
+    @include font($fs: 12px, $lh: 20px, $ff: $dm-sans, $fw: 700, $tal: left);
+    color: $main-black;
+  }
+}
+// TABLET
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 66px 0px 0px 36px;
+    margin: 0 auto;
+    &__list {
+      display: flex;
+    }
+    &__item {
+      &--padding {
+        padding: 0;
+      }
+    }
+    &__desc {
+      padding-top: 36px;
+    }
+    &__img-title {
+      @include font($fs: 48px, $lh: 55px, $ff: $titan-one, $fw: 400, $tal: left);
+      font-size: 48px;
+      line-height: 55px;
+    }
+    &__img-text {
+      width: 180px;
+      @include font($fs: 14px, $lh: 24px, $tal: left);
+      padding-top: 13px;
+    }
+  }
+}
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding: 39px 0px 0px 115px;
+    &__item {
+      width: 330px;
+      height: 222px;
+    }
+    &__desc {
+      padding-top: 40px;
+    }
+    &__img-title {
+      @include font($fs: 58px, $lh: 66px, $ff: $titan-one, $fw: 400, $tal: left);
+    }
+    &__img-text {
+      width: 330px;
+      @include font($fs: 16px, $lh: 28px, $tal: left);
+      padding-top: 15px;
+    }
+  }
+}
