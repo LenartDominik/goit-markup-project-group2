@@ -1,0 +1,597 @@
+.header {
+  position: relative;
+  @include flex-centered;
+  flex-direction: column;
+  align-items: center;
+  height: 502px;
+  margin: 0 auto;
+  background-color: $light-pink;
+  &__counter-container {
+    display: none;
+    visibility: 0;
+    pointer-events: none;
+  }
+  &__tablet-desktop-icons {
+    display: none;
+    visibility: 0;
+    pointer-events: none;
+  }
+  &__nav-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+  }
+  &__logo {
+    padding-top: 6px;
+  }
+  &__burger {
+    background: none;
+    border: none;
+    padding-top: 25px;
+    width: 20px;
+    height: 12px;
+  }
+  &__banner {
+    position: relative;
+    display: flex;
+    &-background {
+      z-index: 1;
+      picture#pic1 {
+        position: absolute;
+        z-index: 3;
+        width: 344px;
+        height: 346px;
+        left: 36px;
+        top: 30px;
+      }
+      picture#pic2 {
+        position: absolute;
+        z-index: 4;
+        width: 171px;
+        height: 410px;
+        top: 43px;
+        left: 120px;
+      }
+    }
+    &-title {
+      @include font($ff: $titan-one, $fs: 26px, $lh: 30px, $tal: left);
+      z-index: 10;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      max-width: 218px;
+      height: 100%;
+      gap: 20px;
+      left: 20px;
+      top: 137px;
+      &--red {
+        color: $main-red;
+        font-size: 48px;
+        line-height: 46px;
+      }
+    }
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+    &-button1 {
+      @include font($ff: $dm-sans, $fs: 8px, $lh: 10px, $fw: 400);
+      color: $main-white;
+      background: $main-red;
+      border-radius: 20px;
+      border: none;
+      width: 62px;
+      height: 24px;
+      transition: all 250ms ease-in-out;
+      &:hover,
+      &:focus {
+        background-color: $light-red;
+        transition: all 250ms ease-in-out;
+      }
+    }
+    &-button2 {
+      @include font($ff: $dm-sans, $fs: 8px, $lh: 10px, $fw: 400);
+      color: $main-red;
+      background: $main-white;
+      border-radius: 20px;
+      border: none;
+      width: 83px;
+      height: 24px;
+      transition: all 250ms ease-in-out;
+      &:hover,
+      &:focus {
+        background-color: $btn-gray;
+        transition: all 250ms ease-in-out;
+      }
+    }
+  }
+}
+
+.mobile-header {
+  overflow: hidden;
+}
+.mobile-menu {
+  position: fixed;
+  @include flex-centered;
+  align-items: flex-start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 0px 0px 0px;
+  background-color: $dark-pink;
+  z-index: 20;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all 500ms ease-in-out;
+  &__button {
+    position: relative;
+    z-index: 4;
+    @include font($ff: $dm-sans, $fs: 16px, $lh: 21px, $fw: 700);
+    color: $main-red;
+    width: 209px;
+    height: 44px;
+    background: $main-white;
+    border-radius: 22px;
+    border: none;
+    transition: all 250ms ease-in-out;
+    &:hover,
+    &:focus {
+      background-color: $btn-gray;
+      transition: all 250ms ease-in-out;
+    }
+    &--gap {
+      @include flex-centered;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+  &__center {
+    @include flex-centered;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    @include flex-centered;
+    flex-direction: column;
+    gap: 19px;
+    list-style: none;
+    width: 100%;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    &-item {
+      display: flex;
+      width: 100%;
+      height: 42px;
+      border-top: 1px solid $line-pink;
+      &:nth-child(5) {
+        border-bottom: 1px solid $line-pink;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $main-white;
+    padding: 0px 0px 0px 21px;
+    &--current {
+      color: $main-red;
+    }
+  }
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  h1 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .mobile-menu {
+    position: fixed;
+    @include flex-centered;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    width: 254px;
+    height: 100%;
+    padding: 60px 0px 0px 0px;
+    background-color: $dark-pink;
+    z-index: 20;
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+    &__button {
+      width: 186px;
+    }
+    &__button#desktop-pc {
+      width: 160px;
+    }
+  }
+  .header {
+    height: 399px;
+    padding-top: 37px;
+    overflow: hidden;
+    &__nav-mobile {
+      padding: 0px 34px 0px 34px;
+    }
+    &__burger {
+      margin-right: 30px;
+      position: relative;
+      z-index: 4;
+    }
+    &__banner {
+      position: relative;
+      display: flex;
+
+      &-background {
+        picture#pic1 {
+          position: absolute;
+          z-index: 2;
+          width: 324px;
+          height: 322px;
+          left: 307px;
+          top: -55px;
+        }
+        picture#pic2 {
+          position: absolute;
+          z-index: 3;
+          width: 143px;
+          height: 336px;
+          left: 378px;
+          top: -30px;
+        }
+      }
+      &-title {
+        max-width: 162px;
+        height: 80px;
+        left: 34px;
+        top: 15px;
+        &--red {
+          line-height: 25px;
+          font-size: 34px;
+        }
+      }
+    }
+
+    &__counter-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding-right: 44px;
+      margin-bottom: 14px;
+      margin-top: 20px;
+      & > svg {
+        position: absolute;
+        fill: $main-white;
+        right: 38px;
+        top: -2px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &__counter {
+      z-index: 2;
+      font-family: $titan-one;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $main-red;
+      &-title {
+        font-family: $dm-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+        color: $main-white;
+      }
+    }
+    &__tablet-desktop-icons {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+    }
+    &__circle-button {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color: $main-white;
+      border: none;
+      position: absolute;
+      bottom: -27px;
+      left: 0;
+    }
+    &__description {
+      position: absolute;
+      bottom: 50px;
+      left: 150px;
+      width: 114px;
+      height: 48px;
+      font-family: $dm-sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 12px;
+      color: $main-white;
+    }
+  }
+}
+picture img#pic3 {
+  z-index: 4;
+  position: absolute;
+  width: 124px;
+  height: 126px;
+  bottom: 28px;
+  left: 34px;
+}
+
+.header__description {
+  position: absolute;
+  bottom: 60px;
+  left: 160px;
+  width: 114px;
+  height: 48px;
+  font-family: $dm-sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: $main-white;
+}
+
+picture img#pic4 {
+  z-index: 4;
+  position: absolute;
+  width: 168px;
+  height: 133px;
+  bottom: 0;
+  right: 34px;
+}
+@media screen and (max-width: 1199px) {
+  .header {
+    &__desktop-menu {
+      display: none;
+      pointer-events: none;
+      visibility: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile-menu__button#desktop-pc {
+    display: none;
+    visibility: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .mobile-menu {
+    display: none;
+    visibility: hidden;
+  }
+  .header {
+    height: 665px;
+    padding: 0;
+    padding-top: 37px;
+    &__counters-container {
+      padding-top: 60px;
+    }
+    &__counter-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding-right: 115px;
+
+      margin-bottom: 14px;
+      margin-top: 20px;
+      & > svg {
+        position: absolute;
+        fill: $main-white;
+
+        width: 30px;
+        height: 30px;
+        right: 97px;
+        top: -2px;
+      }
+    }
+    &__counter {
+      z-index: 2;
+      font-family: $titan-one;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 53px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $main-red;
+      &-title {
+        font-family: $dm-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 10px;
+        text-align: right;
+        color: $main-white;
+      }
+    }
+    &__circle-button {
+      background: none;
+      height: 18px;
+      width: 18px;
+      border: none;
+      position: absolute;
+      padding-top: 20px;
+      bottom: -27px;
+      left: 0;
+    }
+    &__tablet-desktop-icons {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      picture img#pic3 {
+        z-index: 4;
+        position: absolute;
+        width: 188px;
+        height: 191px;
+        bottom: 48px;
+        left: 64px;
+      }
+      picture img#pic4 {
+        position: relative;
+        width: 293px;
+        height: 232px;
+        left: 900px;
+      }
+    }
+    &__description {
+      bottom: 130px;
+      left: 292px;
+      width: 200px;
+      height: 48px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__burger {
+      display: none;
+      visibility: 0;
+      pointer-events: none;
+    }
+    &__nav-mobile {
+      align-items: center;
+      padding-left: 46px;
+      position: relative;
+      z-index: 6;
+    }
+    &__banner {
+      &-button1 {
+        &:hover {
+          background-color: $light-red;
+        }
+      }
+      &-button2 {
+        &:hover {
+          background-color: $btn-gray;
+        }
+      }
+    }
+    &__banner {
+      &-background {
+        picture#pic1 {
+          position: absolute;
+          z-index: 2;
+          width: 538px;
+          height: 538px;
+          left: 460px;
+          top: -40px;
+        }
+        picture#pic2 {
+          position: absolute;
+          z-index: 3;
+          width: 236px;
+          height: 557px;
+          left: 594px;
+          top: 15px;
+        }
+      }
+      &-title {
+        max-width: 277px;
+        height: 137px;
+        left: 115px;
+        top: 84px;
+        &--red {
+          line-height: 52px;
+          font-size: 58px;
+        }
+      }
+    }
+    &__banner-buttons {
+      position: absolute;
+      top: 165px;
+    }
+
+    &__banner-button1 {
+      width: 104px;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    &__banner-button2 {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    &__circle-button {
+      bottom: -65px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .mobile-menu__button {
+    margin-right: 80px;
+    margin-left: 75px;
+  }
+  .menu {
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    &__item {
+      font-family: $dm-sans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      & > a {
+        text-decoration: none;
+        color: $main-white;
+        &.menu__item--current {
+          color: $main-red;
+        }
+        &:hover {
+          color: $main-red;
+        }
+      }
+    }
+    &__item#menu-first {
+      padding-left: 65px;
+    }
+  }
+  .mobile-menu__button:hover {
+    background: $btn-gray;
+  }
+}
