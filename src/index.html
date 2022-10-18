@@ -1,324 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/modern-normalize.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Ice Cream</title>
-  </head>
-  <body>
-    <div class="mobile-menu js-menu-container" id="mobilemenu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/modern-normalize.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>Ice Cream</title>
+</head>
+
+<body>
+  <div class="mobile-menu js-menu-container" id="mobilemenu">
     <button class="modal__close-btn js-close-menu">
-        <svg width="30" height="30">
-            <use href="./images/icons.svg#icon-close"></use>
-        </svg>
+      <svg width="30" height="30">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
     </button>
     <div class="mobile-menu__item">
-        <div class="mobile-menu__center">
-            <button type="button" class="mobile-menu__button" data-modal-open>
-                <div class="mobile-menu__button--gap">
-                    Buy now<svg height="8px" width="5px">
-                        <use href="./images/icons.svg#icon-mobile-button"></use>
-                    </svg>
-                </div>
-            </button>
-        </div>
-        <ul class="mobile-menu__links">
-            <li class="mobile-menu__links-item">
-                <a class="mobile-menu__link mobile-menu__link--current js-close-menu" href="#home">Home</a>
-            </li>
-            <li class="mobile-menu__links-item">
-                <a class="mobile-menu__link" href="#about">About us</a>
-            </li>
-            <li class="mobile-menu__links-item">
-                <a class="mobile-menu__link" href="#about">How it's made?</a>
-            </li>
-            <li class="mobile-menu__links-item">
-                <a class="mobile-menu__link" href="#products">Our products</a>
-            </li>
-            <li class="mobile-menu__links-item">
-                <a class="mobile-menu__link" href="#contacts">Contact</a>
-            </li>
-        </ul>
+      <div class="mobile-menu__center">
+        <button type="button" class="mobile-menu__button" data-modal-open>
+          <div class="mobile-menu__button--gap">
+            Buy now<svg height="8px" width="5px">
+              <use href="./images/icons.svg#icon-mobile-button"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <ul class="mobile-menu__links">
+        <li class="mobile-menu__links-item">
+          <a class="mobile-menu__link mobile-menu__link--current js-close-menu" href="#home">Home</a>
+        </li>
+        <li class="mobile-menu__links-item">
+          <a class="mobile-menu__link" href="#about">About us</a>
+        </li>
+        <li class="mobile-menu__links-item">
+          <a class="mobile-menu__link" href="#about">How it's made?</a>
+        </li>
+        <li class="mobile-menu__links-item">
+          <a class="mobile-menu__link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-menu__links-item">
+          <a class="mobile-menu__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
     </div>
-</div>
-    <header class="header hero-leader"><div class="container">
-        <nav class="header__nav-mobile">
-            <div class="header__logo">
-                <picture>
-                    <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x"
-                        media="(min-width: 1280px)" />
-                    <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x"
-                        media="(min-width: 768px)" />
-                    <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x"
-                        media="(min-width: 320px)" />
-                    <img src="./images/menu-logo.png" alt="page logo" />
-                </picture>
+  </div>
+  <header class="header hero-leader">
+    <div class="container">
+      <nav class="header__nav-mobile">
+        <div class="header__logo">
+          <picture>
+            <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 1280px)" />
+            <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 768px)" />
+            <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 320px)" />
+            <img src="./images/menu-logo.png" alt="page logo" />
+          </picture>
+        </div>
+        <div class="header__desktop-menu">
+          <ul class="menu__list">
+            <li class="menu__item" id="menu-first">
+              <a href="./index.html" class="menu__item--current">Home</a>
+            </li>
+            <li class="menu__item"><a href="#about">About us</a></li>
+            <li class="menu__item">
+              <a href="#about">How it's made?</a>
+            </li>
+            <li class="menu__item"><a href="#products">Our products</a></li>
+            <li class="menu__item"><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <button type="button" class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobilemenu">
+            <svg height="12px" width="20px">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="mobile-menu__button" id="desktop-pc" data-modal-open>
+            <div class="mobile-menu__button--gap">
+              Buy now<svg height="8px" width="5px">
+                <use href="/images/icons.svg#icon-mobile-button"></use>
+              </svg>
             </div>
-            <div class="header__desktop-menu">
-                <ul class="menu__list">
-                    <li class="menu__item" id="menu-first">
-                        <a href="./index.html" class="menu__item--current">Home</a>
-                    </li>
-                    <li class="menu__item"><a href="#about">About us</a></li>
-                    <li class="menu__item">
-                        <a href="#about">How it's made?</a>
-                    </li>
-                    <li class="menu__item"><a href="#products">Our products</a></li>
-                    <li class="menu__item"><a href="#contacts">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <button type="button" class="header__burger js-open-menu" aria-expanded="false"
-                    aria-controls="mobilemenu">
-                    <svg height="12px" width="20px">
-                        <use href="./images/icons.svg#icon-burger"></use>
-                    </svg>
-                </button>
-                <button type="button" class="mobile-menu__button" id="desktop-pc" data-modal-open>
-                    <div class="mobile-menu__button--gap">
-                        Buy now<svg height="8px" width="5px">
-                            <use href="/images/icons.svg#icon-mobile-button"></use>
-                        </svg>
-                    </div>
-                </button>
-            </div>
-        </nav>
-        <div class="header__banner">
-            <div class="header__banner-background">
-                <picture id="pic1">
-                    <source srcset="
+          </button>
+        </div>
+      </nav>
+      <div class="header__banner">
+        <div class="header__banner-background">
+          <picture id="pic1">
+            <source srcset="
                 ./images/banner-elipse.png    1x,
                 ./images/banner-elipse@2x.png 2x
               " media="(min-width: 1280px)" />
-                    <source srcset="
+            <source srcset="
                 ./images/banner-elipse.png    1x,
                 ./images/banner-elipse@2x.png 2x
               " media="(min-width: 768px)" />
-                    <source srcset="
+            <source srcset="
                 ./images/banner-elipse.png    1x,
                 ./images/banner-elipse@2x.png 2x
               " media="(min-width: 320px)" />
-                    <img src="./images/banner-elipse.png" alt="elipse" />
-                </picture>
-                <picture id="pic2">
-                    <source srcset="
+            <img src="./images/banner-elipse.png" alt="elipse" />
+          </picture>
+          <picture id="pic2">
+            <source srcset="
                 ./images/banner-icecream.png    1x,
                 ./images/banner-icecream@2x.png 2x
               " media="(min-width: 1280px)" />
-                    <source srcset="
+            <source srcset="
                 ./images/banner-icecream.png    1x,
                 ./images/banner-icecream@2x.png 2x
               " media="(min-width: 768px)" />
-                    <source srcset="
+            <source srcset="
                 ./images/banner-icecream.png    1x,
                 ./images/banner-icecream@2x.png 2x
               " media="(min-width: 320px)" />
-                    <img src="./images/banner-icecream.png" alt="icecream" />
-                </picture>
-            </div>
-            <div class="header__banner-title">
-                <h1>
-                    ICE CREAM MADE WITH
-                    <span class="header__banner-title--red">PASSION</span>
-                </h1>
-                <div class="header__banner-buttons">
-                    <a href="#products"><button class="header__banner-button1">Products</button></a>
-                    <a href="#about"><button class="header__banner-button2">How it's made?</button></a>
-                </div>
-            </div>
+            <img src="./images/banner-icecream.png" alt="icecream" />
+          </picture>
         </div>
-        <div class="header__counters-container">
-            <div class="header__counter-container">
-                <svg>
-                    <use href="./images/icons.svg#ellipse-white"></use>
-                </svg>
-                <span class="header__counter" id="cafes">16</span>
-                <span class="header__counter-title">cafes</span>
-            </div>
-            <div class="header__counter-container">
-                <svg>
-                    <use href="./images/icons.svg#ellipse-white"></use>
-                </svg>
-                <span class="header__counter" id="food-trucks">23</span>
-                <span class="header__counter-title">food trucks</span>
-            </div>
+        <div class="header__banner-title">
+          <h1>
+            ICE CREAM MADE WITH
+            <span class="header__banner-title--red">PASSION</span>
+          </h1>
+          <div class="header__banner-buttons">
+            <a href="#products"><button class="header__banner-button1">Products</button></a>
+            <a href="#about"><button class="header__banner-button2">How it's made?</button></a>
+          </div>
         </div>
-        <div class="header__tablet-desktop-icons">
-            <div>
-                <picture>
-                    <source srcset="
+      </div>
+      <div class="header__counters-container">
+        <div class="header__counter-container">
+          <svg>
+            <use href="./images/icons.svg#ellipse-white"></use>
+          </svg>
+          <span class="header__counter" id="cafes">16</span>
+          <span class="header__counter-title">cafes</span>
+        </div>
+        <div class="header__counter-container">
+          <svg>
+            <use href="./images/icons.svg#ellipse-white"></use>
+          </svg>
+          <span class="header__counter" id="food-trucks">23</span>
+          <span class="header__counter-title">food trucks</span>
+        </div>
+      </div>
+      <div class="header__tablet-desktop-icons">
+        <div>
+          <picture>
+            <source srcset="
                 ./images/spilling-milk.png    1x,
                 ./images/spilling-milk@2x.png 2x
               " media="(min-width: 1200px)" />
-                    <source srcset="
+            <source srcset="
                 ./images/spilling-milk.png    1x,
                 ./images/spilling-milk@2x.png 2x
               " media="(min-width: 768px)" />
-                    <source srcset="
+            <source srcset="
                 ./images/spilling-milk.png    1x,
                 ./images/spilling-milk@2x.png 2x
               " media="(min-width: 320px)" />
-                    <img id="pic3" src="./images/spilling-milk.png" alt="spilling-milk" />
-                </picture>
-            </div>
-            <div class="header__description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et</p>
-                <button type="button" class="header__circle-button">
-                    <img src="./images/arrow-right@2x.png" alt="arrow right button" width="26" height="26" />
-                </button>
-            </div>
-            <div>
-                <picture>
-                    <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 1280px)" />
-                    <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 768px)" />
-                    <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 320px)" />
-                    <img id="pic4" src="./images/woman.png" alt="woman" />
-                </picture>
-            </div>
+            <img id="pic3" src="./images/spilling-milk.png" alt="spilling-milk" />
+          </picture>
         </div>
-    </div></header>
-    <main class="main">
-      <section class="section products">
-        <div class="products-container">
-          <span class="products__label">100% natural</span>
-          <h2 class="products__header">PRODUCTS</h2>
-          <ul class="products-list">
-            <li class="product product--icecream" id="test1">
-              <h3 class="product__name">ICE CREAM <br /></h3>
-              <p class="product__description" id="product1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <p class="product__description product__description--details" id="product1d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
+        <div class="header__description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et</p>
+          <button type="button" class="header__circle-button">
+            <img src="./images/arrow-right@2x.png" alt="arrow right button" width="26" height="26" />
+          </button>
+        </div>
+        <div>
+          <picture>
+            <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 1280px)" />
+            <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 768px)" />
+            <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 320px)" />
+            <img id="pic4" src="./images/woman.png" alt="woman" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section products">
+      <div class="products-container">
+        <span class="products__label">100% natural</span>
+        <h2 class="products__header">PRODUCTS</h2>
+        <ul class="products-list">
+          <li class="product product--icecream" id="test1">
+            <h3 class="product__name">ICE CREAM <br /></h3>
+            <p class="product__description" id="product1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <p class="product__description product__description--details" id="product1d">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
 
-              <button
-                onclick="myFunction('product1','product1d','test1')"
-                class="product-button"
-                type="button"
-              >
-                <svg class="product-button__icon">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="product product--coffee" id="test2">
-              <h3 class="product__name">ICE COFFEE<br /></h3>
-              <p class="product__description" id="product2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <p class="product__description product__description--details" id="product2d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <button
-                class="product-button"
-                onclick="myFunction('product2','product2d','test2')"
-                type="button"
-              >
-                <svg class="product-button__icon">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="product product--milkshake" id="test3">
-              <h3 class="product__name">MILKSHAKES<br /></h3>
-              <p class="product__description" id="product3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <p class="product__description product__description--details" id="product3d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <button
-                class="product-button"
-                type="button"
-                onclick="myFunction('product3','product3d','test3')"
-              >
-                <svg class="product-button__icon">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section about"></section>
-      <section class="advantages"></section>
-      <section class="section gallery"></section>
-      <section class="section customer-reviews">
-        <div class="customer-reviews__img-container">
-          <img
-            class="customer-reviews__img customer-reviews__img--one"
-            srcset="
+            <button onclick="myFunction('product1','product1d','test1')" class="product-button" type="button">
+              <svg class="product-button__icon">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="product product--coffee" id="test2">
+            <h3 class="product__name">ICE COFFEE<br /></h3>
+            <p class="product__description" id="product2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <p class="product__description product__description--details" id="product2d">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button class="product-button" onclick="myFunction('product2','product2d','test2')" type="button">
+              <svg class="product-button__icon">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="product product--milkshake" id="test3">
+            <h3 class="product__name">MILKSHAKES<br /></h3>
+            <p class="product__description" id="product3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <p class="product__description product__description--details" id="product3d">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button class="product-button" type="button" onclick="myFunction('product3','product3d','test3')">
+              <svg class="product-button__icon">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section about"></section>
+    <section class="advantages"></section>
+    <section class="section gallery"></section>
+    <section class="section customer-reviews">
+      <div class="customer-reviews__img-container">
+        <img class="customer-reviews__img customer-reviews__img--one" srcset="
               ./images/customer-1@2x.jpg  480w,
               ./images/customer-1@2x.jpg  768w,
               ./images/customer-1.jpg    1280w
-            "
-            alt="Emily, Los Angeles"
-          />
-          <img
-            class="customer-reviews__img customer-reviews__img--two"
-            srcset="
+            " alt="Emily, Los Angeles" />
+        <img class="customer-reviews__img customer-reviews__img--two" srcset="
               ./images/customer-2@2x.jpg  480w,
               ./images/customer-2@2x.jpg  768w,
               ./images/customer-2.jpg    1280w
-            "
-            alt=">Sarah, Las Vegas"
-          />
-          <img
-            class="customer-reviews__img customer-reviews__img--three"
-            srcset="
+            " alt=">Sarah, Las Vegas" />
+        <img class="customer-reviews__img customer-reviews__img--three" srcset="
               ./images/customer-3@2x.jpg  480w,
               ./images/customer-3@2x.jpg  768w,
               ./images/customer-3.jpg    1280w
-            "
-            alt="Elizabeth, London"
-          />
+            " alt="Elizabeth, London" />
+      </div>
+      <div class="customer-reviews__text-background">
+        <div class="customer-reviews__paper">
+          <p class="customer-reviews__text customer-reviews__text--one">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+          <p class="customer-reviews__text customer-reviews__text--two">
+            Vestibulum blandit congue lectus vitae consequat. Nam eu nibh sed turpis mollis
+            euismod. Phasellus posuere ante lobortis, iaculis tortor id, viverra massa.
+          </p>
+          <p class="customer-reviews__text customer-reviews__text--three">
+            Praesent pellentesque lectus id dictum mattis. Ut vestibulum odio leo, eget molestie
+            lorem viverra mollis. Nunc sed ultrices magna. Curabitur aliquam in odio sed faucibus.
+          </p>
         </div>
-        <div class="customer-reviews__text-background">
-          <div class="customer-reviews__paper">
-            <p class="customer-reviews__text customer-reviews__text--one">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-            </p>
-            <p class="customer-reviews__text customer-reviews__text--two">
-              Vestibulum blandit congue lectus vitae consequat. Nam eu nibh sed turpis mollis
-              euismod. Phasellus posuere ante lobortis, iaculis tortor id, viverra massa.
-            </p>
-            <p class="customer-reviews__text customer-reviews__text--three">
-              Praesent pellentesque lectus id dictum mattis. Ut vestibulum odio leo, eget molestie
-              lorem viverra mollis. Nunc sed ultrices magna. Curabitur aliquam in odio sed faucibus.
-            </p>
-          </div>
-        </div>
-        <div class="customer-reviews__titles"></div>
-          <h3 class="customer-reviews__title customer-reviews__title--one">Emily, Los Angeles</h3>
-          <h3 class="customer-reviews__title customer-reviews__title--two">Sarah, Las Vegas</h3>
-          <h3 class="customer-reviews__title customer-reviews__title--three">Elizabeth, London</h3>
-        </div>
-        <div class="customer-reviews__dots-menu">
-          <div class="customer-reviews__dot customer-reviews__dot--one"></div>
-          <div class="customer-reviews__dot customer-reviews__dot--two"></div>
-          <div class="customer-reviews__dot customer-reviews__dot--three"></div>
-        </div>
-      </section>
-      <section class="section locations"></section>
-      <section class="contacts-section" id="contacts">
+      </div>
+      <div class="customer-reviews__titles"></div>
+      <h3 class="customer-reviews__title customer-reviews__title--one">Emily, Los Angeles</h3>
+      <h3 class="customer-reviews__title customer-reviews__title--two">Sarah, Las Vegas</h3>
+      <h3 class="customer-reviews__title customer-reviews__title--three">Elizabeth, London</h3>
+      </div>
+      <div class="customer-reviews__dots-menu">
+        <div class="customer-reviews__dot customer-reviews__dot--one"></div>
+        <div class="customer-reviews__dot customer-reviews__dot--two"></div>
+        <div class="customer-reviews__dot customer-reviews__dot--three"></div>
+      </div>
+    </section>
+    <section class="section locations"></section>
+    <section class="contacts-section" id="contacts">
       <div class="container">
 
         <h2 class="visually-hidden">Contacts</h2>
@@ -404,13 +378,8 @@
             </button></li>
         </ul>
       </div>
-    
-      </section>
-      
-    </main>
-    <footer class="footer"></footer>
-    <section class="modal-buy-now">
 
+<<<<<<< HEAD
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__close-btn" data-modal-close>
@@ -485,4 +454,83 @@
      <script src="./js/modal.js"></script>
     <script src="./js/products.js"></script>
   </body>
+=======
+    </section>
+
+  </main>
+  <footer class="footer"></footer>
+  <section class="modal-buy-now">
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__flexbox">
+          <legend class="modal__title">Select your product</legend>
+          <div class="modal__product-container">
+            <label class="modal__item">
+              <input type="checkbox" class="modal__item-checkbox" />
+              <span class="modal__option-inner">
+                <img class="modal__image" src="./images/pc-product1.png" />
+                <span class="modal__name">icecream</span>
+              </span>
+            </label>
+            <label class="modal__item">
+              <input type="checkbox" class="modal__item-checkbox" />
+              <span class="modal__option-inner">
+                <img class="modal__image" src="./images/pc-product2.png" />
+                <span class="modal__name">ice coffee</span>
+              </span>
+            </label>
+            <label class="modal__item">
+              <input type="checkbox" class="modal__item-checkbox" />
+              <span class="modal__option-inner">
+                <img class="modal__image" src="./images/pc-product3.png" />
+                <span class="modal__name">milkshakes</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- done - bez buttona -->
+
+          <form class="modal__form">
+            <label class="modal__label">
+              <input type="text" name="name" class="modal__input" required />
+
+              <span class="modal__tag">Name</span>
+              <i class="modal__tag-decoration"></i>
+            </label>
+
+            <label class="modal__label">
+              <input type="text" class="modal__input" required />
+              <span class="modal__tag">Address</span>
+              <i class="modal__tag-decoration"></i>
+            </label>
+
+            <label class="modal__label">
+              <input type="tel" name="phone" class="modal__input" required />
+              <span class="modal__tag">Phone</span>
+              <i class="modal__tag-decoration"></i>
+            </label>
+            <label class="modal__label">
+              <input type="email" name="email" class="modal__input" required />
+              <span class="modal__tag">e-mail</span>
+              <i class="modal__tag-decoration"></i>
+            </label>
+            <button type="submit" value="data" class="btn">Proceed to checkout</button>
+          </form>
+
+        </div>
+      </div>
+  </section>
+  <!--JS-->
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/products.js"></script>
+</body>
+
+>>>>>>> 4c77af6f4ee15f59d87db227b9266f4f08cf2976
 </html>
