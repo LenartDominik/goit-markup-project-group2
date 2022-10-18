@@ -1,0 +1,26 @@
+@mixin font (
+  $ff: $dm-sans,
+  $fss: normal,
+  $fs: 14px,
+  $fw: 700,
+  $lh: 21px,
+  $ls: 0.04em,
+  $tt: none,
+  $tal: center,
+  $td: none
+) {
+  font-family: $ff;
+  text-align: $tal;
+  text-transform: $tt;
+  font-style: $fss;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-decoration: $td;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+}

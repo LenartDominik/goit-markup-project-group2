@@ -1,0 +1,58 @@
+.button {
+  @include font($fs: 16px, $fw: 700, $lh: 21px);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 22px;
+  padding: 11px 37px;
+  &-contacts {
+    @include flex-centered;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 54px;
+    padding: 11px 0px;
+    &__locations {
+      @include flex-centered;
+      align-items: center;
+      height: 44px;
+      color: $main-white;
+      background-color: $main-red;
+      transition: 250ms ease;
+      &:hover,
+      &:focus {
+        background-color: $light-red;
+        transition: 250ms ease;
+      }
+    }
+    &__franchise {
+      @include flex-centered;
+      align-items: center;
+      height: 44px;
+      color: $main-red;
+      background-color: $main-white;
+      transition: 250ms ease;
+      &:hover,
+      &:focus {
+        transition: 250ms ease;
+        background-color: $btn-gray;
+      }
+    }
+    .button-contacts__svg {
+      margin-left: 13px;
+      height: 8px;
+      width: 4px;
+      &--color-white {
+        fill: $main-white;
+      }
+      &--color-red {
+        fill: $main-red;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-contacts {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
