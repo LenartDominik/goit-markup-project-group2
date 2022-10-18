@@ -1,0 +1,197 @@
+.about {
+  min-width: 320px;
+  height: 100%;
+  width: 100%;
+  background-color: $bg-pink;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__bg-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44%;
+    z-index: 1;
+  }
+
+  &__head {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom: 26px;
+    z-index: 2;
+  }
+
+  &__label {
+    position: relative;
+    @include font($fs: 18px, $lh: 21px, $ff: $titan-one, $fw: 400);
+    text-transform: uppercase;
+    color: $main-pink;
+    padding-bottom: 15px;
+    z-index: 2;
+  }
+
+  &__title {
+    position: relative;
+    @include font($fs: 34px, $lh: 39px, $ff: $titan-one, $fw: 400);
+    text-transform: uppercase;
+    color: $main-red;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    padding-bottom: 46px;
+    z-index: 2;
+  }
+
+  &__items {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+  }
+
+  &__intro {
+    position: relative;
+    min-width: 220px;
+    @include font($fs: 12px, $lh: 19px, $ff: $dm-sans, $fw: 500, $tal: left);
+    color: $main-black;
+    margin-bottom: 47px;
+    z-index: 2;
+  }
+
+  &__paragraph {
+    position: relative;
+    min-width: 220px;
+    @include font($fs: 12px, $lh: 19px, $ff: $dm-sans, $fw: 500, $tal: left);
+    color: $dark-gray;
+    z-index: 2;
+  }
+
+  &__btn {
+    @include font($fs: 14px, $lh: 18px, $ff: $dm-sans, $fw: 700);
+    color: $main-red;
+    background-color: $main-white;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    margin-top: 47px;
+    width: 176px;
+    height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $btn-gray;
+    }
+  }
+}
+// TABLET
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 772px;
+    &__background {
+      display: none;
+    }
+    &__head {
+      width: 440px;
+      padding-top: 130px;
+      padding-bottom: 50px;
+    }
+    &__label {
+      @include font($fs: 26px, $lh: 30px, $ff: $titan-one, $fw: 400, $tt: uppercase);
+      padding-bottom: 16px;
+    }
+    &__title {
+      @include font($fs: 48px, $lh: 55px, $ff: $titan-one, $fw: 400, $tt: uppercase);
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+    }
+    &__img {
+      width: 340px;
+      height: 339px;
+      padding: 0;
+    }
+    &__items {
+      padding: 50px 36px 0 17px;
+    }
+    &__intro {
+      @include font($fs: 14px, $lh: 25px, $ff: $dm-sans, $fw: 500, $tal: left);
+      max-width: 463px;
+      margin-bottom: 49px;
+    }
+    &__paragraph {
+      @include font($fs: 14px, $lh: 25px, $ff: $dm-sans, $fw: 500, $tal: left);
+      max-width: 463px;
+    }
+    &__btn {
+      margin-top: 62px;
+    }
+  }
+}
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  .about {
+    &__bg-img {
+      display: block;
+      top: 25%;
+    }
+    &__head {
+      width: 534px;
+      padding-top: 125px;
+      padding-bottom: 55px;
+    }
+    &__label {
+      @include font($fs: 30px, $lh: 34px, $ff: $titan-one, $fw: 400, $tt: uppercase);
+      padding-bottom: 15px;
+    }
+    &__title {
+      @include font($fs: 58px, $lh: 66px, $ff: $titan-one, $fw: 400, $tt: uppercase);
+    }
+    &__img {
+      width: 516px;
+      height: 516px;
+    }
+    &__items {
+      padding: 55px 115px 0 74px;
+    }
+    &__intro {
+      @include font($fs: 16px, $lh: 28px, $ff: $dm-sans, $fw: 500, $tal: left);
+      width: 463px;
+      height: 79px;
+      margin-bottom: 35px;
+    }
+    &__paragraph {
+      @include font($fs: 14px, $lh: 27px, $ff: $dm-sans, $fw: 500, $tal: left);
+      width: 463px;
+      height: 155px;
+    }
+    &__btn {
+      margin-top: 45px;
+    }
+  }
+}
