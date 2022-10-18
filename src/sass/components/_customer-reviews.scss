@@ -10,6 +10,7 @@
     &__img-container {
         margin: 0 auto 29px;
         height: 85px;
+        display: flex;
     }
     &__img {
         left: 0;
@@ -107,7 +108,7 @@
     }
     &__dots-menu {
         display: flex;
-        margin: 0 auto;
+        margin: 0 auto 86px;
         height: 20px;
     }
     &__dot {
@@ -312,6 +313,9 @@
         &__title {
             font-size: 16px;
         }
+        &__dots-menu {
+        margin: 0 auto 119px;
+    }
     }
 }
 
@@ -344,5 +348,8 @@
         &__title {
             font-size: 20px;
         }
+                &__dots-menu {
+        margin: 0 auto 132px;
+    }
     }
 }

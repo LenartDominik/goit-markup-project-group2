@@ -1539,6 +1539,9 @@ picture img#pic4 {
 .customer-reviews__img-container {
   margin: 0 auto 29px;
   height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .customer-reviews__img {
   left: 0;
@@ -1648,7 +1651,7 @@ picture img#pic4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 86px;
   height: 20px;
 }
 .customer-reviews__dot {
@@ -1982,6 +1985,9 @@ picture img#pic4 {
   .customer-reviews__title {
     font-size: 16px;
   }
+  .customer-reviews__dots-menu {
+    margin: 0 auto 119px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .customer-reviews__img-container {
@@ -2008,6 +2014,9 @@ picture img#pic4 {
   }
   .customer-reviews__title {
     font-size: 20px;
+  }
+  .customer-reviews__dots-menu {
+    margin: 0 auto 132px;
   }
 }
 .button {
