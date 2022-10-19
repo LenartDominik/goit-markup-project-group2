@@ -147,7 +147,7 @@
     &--gap {
       @include flex-centered;
       align-items: center;
-      gap: 5px;
+      gap: 10px;
     }
   }
   &__center {
@@ -558,6 +558,9 @@ picture img#pic4 {
   .mobile-menu__button {
     margin-right: 80px;
     margin-left: 75px;
+    &--gap {
+      gap: 20px;
+    }
   }
   .menu {
     &__list {
