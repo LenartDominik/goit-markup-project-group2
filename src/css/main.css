@@ -307,7 +307,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
+  gap: 5px;
 }
 .mobile-menu__center {
   display: -webkit-box;
@@ -422,6 +422,9 @@ a {
   .mobile-menu__button {
     width: 186px;
   }
+  .mobile-menu__button-svg {
+    fill: rgb(212, 20, 67);
+  }
   .mobile-menu__button#desktop-pc {
     width: 160px;
   }
@@ -519,21 +522,19 @@ a {
     bottom: 0px;
   }
   .header__circle-button {
+    cursor: pointer;
     height: 18px;
     width: 18px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
     border: none;
     position: absolute;
     bottom: -27px;
-    left: 0;
   }
   .header__description {
     position: absolute;
     bottom: 50px;
     left: 150px;
     width: 114px;
-    height: 48px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 400;
@@ -553,7 +554,7 @@ picture img#pic3 {
 
 .header__description {
   position: absolute;
-  bottom: 60px;
+  bottom: 65px;
   left: 160px;
   width: 114px;
   height: 48px;
@@ -653,9 +654,7 @@ picture img#pic4 {
     width: 18px;
     border: none;
     position: absolute;
-    padding-top: 20px;
     bottom: -27px;
-    left: 0;
   }
   .header__tablet-desktop-icons {
     display: block;
@@ -678,7 +677,7 @@ picture img#pic4 {
     left: 900px;
   }
   .header__description {
-    bottom: 130px;
+    bottom: 135px;
     left: 292px;
     width: 200px;
     height: 48px;

@@ -147,7 +147,7 @@
     &--gap {
       @include flex-centered;
       align-items: center;
-      gap: 16px;
+      gap: 5px;
     }
   }
   &__center {
@@ -220,6 +220,9 @@
     transition: transform 250ms ease-in-out;
     &__button {
       width: 186px;
+      &-svg {
+        fill: $main-red;
+      }
     }
     &__button#desktop-pc {
       width: 160px;
@@ -315,21 +318,19 @@
       bottom: 0px;
     }
     &__circle-button {
+      cursor: pointer;
       height: 18px;
       width: 18px;
       border-radius: 50%;
-      background-color: $main-white;
       border: none;
       position: absolute;
       bottom: -27px;
-      left: 0;
     }
     &__description {
       position: absolute;
       bottom: 50px;
       left: 150px;
       width: 114px;
-      height: 48px;
       font-family: $dm-sans;
       font-style: normal;
       font-weight: 400;
@@ -350,7 +351,7 @@ picture img#pic3 {
 
 .header__description {
   position: absolute;
-  bottom: 60px;
+  bottom: 65px;
   left: 160px;
   width: 114px;
   height: 48px;
@@ -448,9 +449,7 @@ picture img#pic4 {
       width: 18px;
       border: none;
       position: absolute;
-      padding-top: 20px;
       bottom: -27px;
-      left: 0;
     }
     &__tablet-desktop-icons {
       display: block;
@@ -473,7 +472,7 @@ picture img#pic4 {
       }
     }
     &__description {
-      bottom: 130px;
+      bottom: 135px;
       left: 292px;
       width: 200px;
       height: 48px;
