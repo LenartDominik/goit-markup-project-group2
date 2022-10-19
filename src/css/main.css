@@ -19,6 +19,7 @@ button {
 
 body {
   font-family: DM Sans;
+  overflow-x: hidden;
 }
 
 h1,
