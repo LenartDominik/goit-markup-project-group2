@@ -149,6 +149,16 @@ a {
   height: 410px;
   top: 43px;
   left: 120px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.header__banner-background picture#pic2:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
 }
 .header__banner-title {
   font-family: Titan One;
@@ -566,6 +576,16 @@ picture img#pic3 {
   height: 126px;
   bottom: 28px;
   left: 34px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+picture img#pic3:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
 }
 
 .header__description {
@@ -593,6 +613,16 @@ picture img#pic4 {
   height: 133px;
   bottom: 0;
   right: 34px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+picture img#pic4:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
 }
 
 @media screen and (max-width: 1199px) {
