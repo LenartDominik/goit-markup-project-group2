@@ -176,9 +176,9 @@
           <button type="button" class="header__circle-button">
             <img src="./images/arrow-right@2x.png" alt="arrow right button" width="26" height="26" />
           </button>
-      
+
         </div>
-        
+
         <div>
           <picture>
             <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 1280px)" />
@@ -223,7 +223,8 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et. dolore magna aliqua facilisis.
             </p>
-            <button class="product-button" id="product-btn" onclick="myFunction('product2','product2d','test2')" type="button">
+            <button class="product-button" id="product-btn" onclick="myFunction('product2','product2d','test2')"
+              type="button">
               <svg class="product-button__icon">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -239,7 +240,8 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et. dolore magna aliqua facilisis.
             </p>
-            <button class="product-button" id="product-btn" type="button" onclick="myFunction('product3','product3d','test3')">
+            <button class="product-button" id="product-btn" type="button"
+              onclick="myFunction('product3','product3d','test3')">
               <svg class="product-button__icon">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -318,7 +320,7 @@
               ./images/gallery@2x.png  480w,
               ./images/gallery@2x.png  768w,
               ./images/gallery.png    1280w
-            " alt="gallery" />
+            " alt="gallery" src="./images/gallery@2x.png" />
       </div>
     </section>
     <section class="section customer-reviews">
@@ -466,35 +468,35 @@
                 <h2 class="footer__text-two">with passion</h2>
           </div>
           <div class="footer__right-side">
-          <ul class="footer__icons">
-            <li class="footer__list">
-              <a class="footer__link" href="https://github.com" target="_blank">
-                <svg class="footer__icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__list">
-              <a class="footer__link" href="https://telegram.org" target="_blank">
-                <svg class="footer__icon footer__icon--padding " width="25" height="25">
-                  <use href="./images/icons.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__list">
-              <a href="http://facebook.com" target="_blank">
-                <svg class="footer__icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+            <ul class="footer__icons">
+              <li class="footer__list">
+                <a class="footer__link" href="https://github.com" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="https://telegram.org" target="_blank">
+                  <svg class="footer__icon footer__icon--padding " width="25" height="25">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list">
+                <a href="http://facebook.com" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
 
-                </svg>
-              </a>
-            </li>
-          </ul>
+                  </svg>
+                </a>
+              </li>
+            </ul>
 
-          <div class="footer__contact">
-            <p>Feel free to contact <a class="footer__contact footer__contact--phone" href="+61 (0) 383 766 284"
-                target="_blank">+61 (0) 383 766 284</a></p>
-          </div>
+            <div class="footer__contact">
+              <p>Feel free to contact <a class="footer__contact footer__contact--phone" href="tel:+61(0)383766284"
+                  target="_blank">+61 (0) 383 766 284</a></p>
+            </div>
           </div>
         </div>
 
@@ -514,26 +516,26 @@
           </svg>
         </button>
         <div class="modal__flexbox">
-          <legend class="modal__title">Select your product</legend>
+          <p class="modal__title">Select your product</p>
           <div class="modal__product-container">
             <label class="modal__item">
               <input type="checkbox" class="modal__item-checkbox" />
               <span class="modal__option-inner">
-                <img class="modal__image" src="./images/pc-product1.png" />
+                <img class="modal__image" src="./images/pc-product1.png" alt="product icecream" />
                 <span class="modal__name">icecream</span>
               </span>
             </label>
             <label class="modal__item">
               <input type="checkbox" class="modal__item-checkbox" />
               <span class="modal__option-inner">
-                <img class="modal__image" src="./images/pc-product2.png" />
+                <img class="modal__image" src="./images/pc-product2.png" alt="product ice coffee" />
                 <span class="modal__name">ice coffee</span>
               </span>
             </label>
             <label class="modal__item">
               <input type="checkbox" class="modal__item-checkbox" />
               <span class="modal__option-inner">
-                <img class="modal__image" src="./images/pc-product3.png" />
+                <img class="modal__image" src="./images/pc-product3.png" alt="product milkshake" />
                 <span class="modal__name">milkshakes</span>
               </span>
             </label>
@@ -575,7 +577,7 @@
   <script src="./products.js"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
-  
+
 </body>
 
 </html>
