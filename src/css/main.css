@@ -1108,15 +1108,51 @@ picture img#pic4:hover {
     line-height: 176%;
     margin-bottom: 62px;
   }
+  .products .product--icecream {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+  }
+  .products .product--icecream:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+  }
   .products .product--icecream::before {
     content: url("../images/pc-product1.png");
     position: absolute;
     top: -210px;
   }
+  .products .product--coffee {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+  }
+  .products .product--coffee:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+  }
   .products .product--coffee::before {
     content: url("../images/pc-product2.png");
     position: absolute;
     top: -210px;
+  }
+  .products .product--milkshake {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+  }
+  .products .product--milkshake:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
   }
   .products .product--milkshake::before {
     content: url("../images/pc-product3.png");

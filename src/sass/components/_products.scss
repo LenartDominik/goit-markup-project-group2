@@ -250,6 +250,12 @@
       }
 
       &--icecream {
+        transform: scale(1);
+        transition: 500ms all ease;
+        &:hover {
+          transform: scale(1.1);
+          transition: 500ms all ease;
+        }
         &::before {
           content: url('../images/pc-product1.png');
           position: absolute;
@@ -258,6 +264,12 @@
       }
 
       &--coffee {
+        transform: scale(1);
+        transition: 500ms all ease;
+        &:hover {
+          transform: scale(1.1);
+          transition: 500ms all ease;
+        }
         &::before {
           content: url('../images/pc-product2.png');
           position: absolute;
@@ -266,6 +278,12 @@
       }
 
       &--milkshake {
+        transform: scale(1);
+        transition: 500ms all ease;
+        &:hover {
+          transform: scale(1.1);
+          transition: 500ms all ease;
+        }
         &::before {
           content: url('../images/pc-product3.png');
           position: absolute;
