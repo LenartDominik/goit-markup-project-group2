@@ -90,6 +90,7 @@ a {
   height: 502px;
   margin: 0 auto;
   background-color: rgb(255, 184, 202);
+  overflow: hidden;
 }
 .header__counter-container {
   display: none;

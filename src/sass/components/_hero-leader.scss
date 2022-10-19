@@ -6,7 +6,7 @@
   height: 502px;
   margin: 0 auto;
   background-color: $light-pink;
-
+  overflow: hidden;
   &__counter-container {
     display: none;
     visibility: 0;
@@ -36,6 +36,7 @@
   &__banner {
     position: relative;
     display: flex;
+
     &-background {
       z-index: 1;
       picture#pic1 {
