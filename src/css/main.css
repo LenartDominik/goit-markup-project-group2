@@ -1121,6 +1121,9 @@ picture img#pic4:hover {
     transition: 500ms all ease;
     background-image: url("../images/test1.png");
   }
+  .products .product--icecream:hover p {
+    color: rgb(144, 126, 130);
+  }
   .products .product--icecream::before {
     content: url("../images/pc-product1.png");
     position: absolute;
@@ -1139,6 +1142,9 @@ picture img#pic4:hover {
     transition: 500ms all ease;
     background-image: url("../images/test1.png");
   }
+  .products .product--coffee:hover p {
+    color: rgb(144, 126, 130);
+  }
   .products .product--coffee::before {
     content: url("../images/pc-product2.png");
     position: absolute;
@@ -1156,6 +1162,9 @@ picture img#pic4:hover {
     -webkit-transition: 500ms all ease;
     transition: 500ms all ease;
     background-image: url("../images/test1.png");
+  }
+  .products .product--milkshake:hover p {
+    color: rgb(144, 126, 130);
   }
   .products .product--milkshake::before {
     content: url("../images/pc-product3.png");
