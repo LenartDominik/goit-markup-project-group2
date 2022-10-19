@@ -14,5 +14,3 @@ function myFunction(d, p, b) {
       'url("https://raw.githubusercontent.com/Adamskoczen/Project-1-IceCream/main/src/images/test1.png")';
   }
 }
-
-document.getElementById('product-btn').onclick = myFunction;
