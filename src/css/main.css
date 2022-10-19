@@ -1468,6 +1468,16 @@ picture img#pic4:hover {
   .about__img {
     width: 516px;
     height: 516px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+  }
+  .about__img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
   }
   .about__items {
     padding: 55px 115px 0 74px;
