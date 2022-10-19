@@ -1096,7 +1096,6 @@ picture img#pic4 {
 }
 
 .about {
-  min-width: 320px;
   height: 100%;
   width: 100%;
   background-color: rgb(255, 245, 246);
