@@ -11,6 +11,6 @@ function myFunction(d, p, b) {
     x.style.display = 'none';
     y.style.display = 'block';
     m.style.backgroundImage =
-      'url("https://ewamazurek.github.io/Ice-Cream-2-Products/images/test1.png")';
+      'url("https://raw.githubusercontent.com/Adamskoczen/Project-1-IceCream/main/src/images/test1.png")';
   }
 }
