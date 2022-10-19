@@ -2475,38 +2475,30 @@ picture img#pic4 {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: DM Sans;
   background-color: rgb(255, 245, 246);
-  margin: 0 auto;
   padding-top: 113px;
+}
+.footer .container {
+  margin: 0 auto;
 }
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.footer__text {
   max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer__text-upercasse {
-  margin-left: 22px;
   margin-right: 66px;
   text-transform: uppercase;
   text-align: left;
@@ -2514,19 +2506,17 @@ picture img#pic4 {
 .footer__text-one {
   font-family: Titan One;
   color: rgb(255, 165, 186);
-  font-size: 18px;
   font-weight: 400;
-  line-height: 34px;
-  letter-spacing: 4%;
-  margin-top: 165px;
+  font-size: 18px;
+  line-height: 21px;
 }
 .footer__text-two {
+  margin-top: 17px;
   font-family: Titan One;
   color: rgb(212, 20, 67);
   font-size: 34px;
-  font-weight: 400;
-  line-height: 34px;
-  letter-spacing: 4%;
+  line-height: 39px;
+  letter-spacing: 0.04em;
 }
 .footer__icons {
   position: relative;
@@ -2563,6 +2553,9 @@ picture img#pic4 {
   -ms-flex-line-pack: center;
       align-content: center;
 }
+.footer__list:hover, .footer__list:focus {
+  background-color: #d41443;
+}
 .footer__contact {
   position: relative;
   text-align: right;
@@ -2570,7 +2563,6 @@ picture img#pic4 {
   font-size: 13px;
   margin-top: 46px;
   margin-bottom: 43px;
-  padding-right: 20px;
 }
 .footer__contact--phone {
   color: rgb(212, 20, 67);
@@ -2578,7 +2570,6 @@ picture img#pic4 {
 }
 .footer__contact p {
   position: relative;
-  left: 47px;
 }
 .footer__signature {
   text-align: center;
@@ -2596,11 +2587,20 @@ picture img#pic4 {
   .footer {
     padding-top: 165px;
   }
+  .footer__text {
+    padding-left: 36px;
+    padding-right: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer__text-upercasse {
-    margin-left: 22px;
-    margin-right: 66px;
     text-transform: uppercase;
-    width: 350px;
+    margin-right: 0px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .footer__text-one {
     font-family: Titan One;
@@ -2609,7 +2609,6 @@ picture img#pic4 {
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 4%;
-    margin-top: 165px;
   }
   .footer__text-two {
     font-family: Titan One;
@@ -2618,18 +2617,29 @@ picture img#pic4 {
     font-weight: 400;
     line-height: 55px;
   }
+  .footer__right-side {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .footer__icons {
-    right: 36px;
-    margin-top: -252px;
+    margin: 0;
     gap: 30px;
+    margin-bottom: 40px;
   }
   .footer__contact {
+    position: relative;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     font-weight: bold;
     font-size: 14px;
     line-height: 26.04px;
     text-align: right;
-    margin-right: 39px;
-    margin-top: 65px;
+    padding: 0;
+    margin: 0;
     padding-bottom: 120px;
   }
   .footer__contact--phone {
@@ -2637,7 +2647,9 @@ picture img#pic4 {
   }
   .footer__contact p {
     position: relative;
-    left: 47px;
+    top: 0;
+    right: 0;
+    left: 0;
   }
   .footer__signature {
     margin-top: 63px;
@@ -2652,9 +2664,21 @@ picture img#pic4 {
   }
 }
 @media screen and (min-width: 1280px) {
+  .footer {
+    margin: 0 auto;
+  }
+  .footer__text {
+    padding-left: 114px;
+    padding-right: 114px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer__text-upercasse {
-    margin-left: 114px;
-    width: 450px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .footer__text-one {
     font-family: Titan One;
@@ -2670,25 +2694,25 @@ picture img#pic4 {
     line-height: 55px;
     margin-top: 15px;
   }
+  .footer__right-side {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
   .footer__icons {
-    right: 36px;
-    margin-right: 85px;
-    margin-top: -152px;
     gap: 30px;
   }
   .footer__contact {
     font-size: 16px;
     line-height: 29.76px;
-    margin-right: 85px;
     margin-top: 37px;
     padding-bottom: 12px;
   }
   .footer__contact--phone {
     color: rgb(212, 20, 67);
+    margin-right: 0;
   }
   .footer__contact p {
     position: relative;
-    left: 47px;
   }
 }
 .btn {
