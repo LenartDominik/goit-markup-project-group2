@@ -532,6 +532,7 @@ a {
     position: absolute;
     width: 100%;
     bottom: 0px;
+    pointer-events: auto;
   }
   .header__circle-button {
     cursor: pointer;
@@ -541,6 +542,20 @@ a {
     border: none;
     position: absolute;
     bottom: -27px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 300ms -webkit-transform ease;
+    transition: 300ms -webkit-transform ease;
+    transition: 300ms transform ease;
+    transition: 300ms transform ease, 300ms -webkit-transform ease;
+  }
+  .header__circle-button:hover, .header__circle-button:focus {
+    -webkit-transition: 300ms -webkit-transform ease;
+    transition: 300ms -webkit-transform ease;
+    transition: 300ms transform ease;
+    transition: 300ms transform ease, 300ms -webkit-transform ease;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 picture img#pic3 {
@@ -663,12 +678,27 @@ picture img#pic4 {
     border: none;
     position: absolute;
     bottom: -27px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 300ms -webkit-transform ease;
+    transition: 300ms -webkit-transform ease;
+    transition: 300ms transform ease;
+    transition: 300ms transform ease, 300ms -webkit-transform ease;
+  }
+  .header__circle-button:hover, .header__circle-button:focus {
+    -webkit-transition: 300ms -webkit-transform ease;
+    transition: 300ms -webkit-transform ease;
+    transition: 300ms transform ease;
+    transition: 300ms transform ease, 300ms -webkit-transform ease;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .header__tablet-desktop-icons {
     display: block;
     position: absolute;
     width: 100%;
     bottom: 0px;
+    pointer-events: auto;
   }
   .header__tablet-desktop-icons picture img#pic3 {
     z-index: 4;

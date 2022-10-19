@@ -6,6 +6,7 @@
   height: 502px;
   margin: 0 auto;
   background-color: $light-pink;
+
   &__counter-container {
     display: none;
     visibility: 0;
@@ -304,6 +305,7 @@
       position: absolute;
       width: 100%;
       bottom: 0px;
+      pointer-events: auto;
     }
     &__circle-button {
       cursor: pointer;
@@ -313,6 +315,13 @@
       border: none;
       position: absolute;
       bottom: -27px;
+      transform: scale(1);
+      transition: 300ms transform ease;
+      &:hover,
+      &:focus {
+        transition: 300ms transform ease;
+        transform: scale(0.8);
+      }
     }
   }
 }
@@ -334,7 +343,6 @@ picture img#pic3 {
   @include font($ff: $dm-sans, $fs: 8px, $lh: 12px, $fw: 400, $tal: left);
   color: $main-white;
 }
-
 picture img#pic4 {
   z-index: 4;
   position: absolute;
@@ -410,12 +418,20 @@ picture img#pic4 {
       border: none;
       position: absolute;
       bottom: -27px;
+      transform: scale(1);
+      transition: 300ms transform ease;
+      &:hover,
+      &:focus {
+        transition: 300ms transform ease;
+        transform: scale(0.8);
+      }
     }
     &__tablet-desktop-icons {
       display: block;
       position: absolute;
       width: 100%;
       bottom: 0px;
+      pointer-events: auto;
       picture img#pic3 {
         z-index: 4;
         position: absolute;
