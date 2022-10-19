@@ -182,14 +182,14 @@
   &__link {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    @include font($ff: $dm-sans, $fs: 14px, $lh: 18px, $fw: 700);
     color: $main-white;
     padding: 0px 0px 0px 21px;
     &--current {
+      color: $main-red;
+    }
+    &:hover,
+    &:focus {
       color: $main-red;
     }
   }
@@ -292,22 +292,10 @@
     }
     &__counter {
       z-index: 2;
-      font-family: $titan-one;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 32px;
-      text-align: right;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      @include font($ff: $titan-one, $fs: 28px, $lh: 32px, $fw: 400, $tal: right, $tt: uppercase);
       color: $main-red;
       &-title {
-        font-family: $dm-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 10px;
-        text-align: right;
+        @include font($ff: $dm-sans, $fs: 8px, $lh: 10px, $fw: 400, $tal: right);
         color: $main-white;
       }
     }
@@ -326,18 +314,6 @@
       position: absolute;
       bottom: -27px;
     }
-    &__description {
-      position: absolute;
-      bottom: 50px;
-      left: 150px;
-      width: 114px;
-      font-family: $dm-sans;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 12px;
-      color: $main-white;
-    }
   }
 }
 picture img#pic3 {
@@ -355,11 +331,7 @@ picture img#pic3 {
   left: 160px;
   width: 114px;
   height: 48px;
-  font-family: $dm-sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 12px;
+  @include font($ff: $dm-sans, $fs: 8px, $lh: 12px, $fw: 400, $tal: left);
   color: $main-white;
 }
 
@@ -424,22 +396,10 @@ picture img#pic4 {
     }
     &__counter {
       z-index: 2;
-      font-family: $titan-one;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 46px;
-      line-height: 53px;
-      text-align: right;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      @include font($ff: $titan-one, $fs: 46px, $lh: 53px, $fw: 400, $tal: right, $tt: uppercase);
       color: $main-red;
       &-title {
-        font-family: $dm-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 10px;
-        text-align: right;
+        @include font($ff: $dm-sans, $fs: 14px, $lh: 10px, $fw: 400, $tal: right);
         color: $main-white;
       }
     }
@@ -570,11 +530,7 @@ picture img#pic4 {
     }
 
     &__item {
-      font-family: $dm-sans;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 21px;
+      @include font($ff: $dm-sans, $fs: 16px, $lh: 21px, $fw: 700);
       display: flex;
       align-items: center;
       cursor: pointer;
