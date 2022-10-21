@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Adamskoczen.github.io/Project-1-IceCream",
+  "homepage": "https://LenartDominik.github.io/goit-markup-project-group2",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Project-1-IceCream/"
+    "build": "parcel build src/*.html --public-url /goit-markup-project-group2/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Adamskoczen/Project-1-IceCream"
+    "url": "git+https://github.com/LenartDominik/goit-markup-project-group2"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Adamskoczen/Project-1-IceCream"
+    "url": "https://github.com/LenartDominik/goit-markup-project-group2"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
